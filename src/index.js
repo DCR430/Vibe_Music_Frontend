@@ -1,5 +1,5 @@
 //#1 Fetching from artist show page and render the artists
-for (let num=1; num<52; num++) //12 times make request
+for (let num=1; num<56; num++) //12 times make request
 fetch(`http://localhost:3000/artists/${num}`)
 .then(response => response.json())
 .then(artist => {
@@ -37,13 +37,15 @@ function getTracks(num) {
         tracklist.data.forEach(track => {
             const artistItem = document.querySelector(`div[data-id="${num}"]`)
             const trackList = document.createElement('div')
-
             trackList.innerHTML = `
-                <p>${track.title}</p> <br>
+                <span>${track.title}</span> <br>
+                <span>${Math.floor((track.duration)/60)}:${track.duration%60}</span> <br>
+                <span>${track.album.title}</span> <br>
                 <audio id="audio" src=${track.preview} controls></audio>
-                <button class="fav">Favorite</button>
+                <button class="fav">It's A Vibe!</button>
             `
-             artistItem.append(trackList) 
+            
+        artistItem.append(trackList) 
         })
     })
 }
@@ -58,7 +60,7 @@ function renderArtist(artist) {
     artistItem.innerHTML = `
         <p>${artist.name}</p>
         <img src = ${artist.picture_medium}>
-        <button class='info'>Top Tracks</button>
+        <button class='info'>Top Hits</button>
     `
     artistItem.dataset.id = artist.id
     artistList.append(artistItem)
@@ -138,7 +140,7 @@ searchBar.addEventListener('keyup', e => {
         searchResults.innerHTML = `
         <span>${artist.name}</span>
         <img class="search-pics" src = ${artist.picture_medium}>
-        <button class='info-from-search'>Top Tracks</button>
+        <button class='info-from-search'>Top Hits!</button>
         `
         searchResults.dataset.artist_id = artist.id
     })
@@ -156,10 +158,10 @@ document.addEventListener('click', e => {
                 const tracklist = document.createElement('div')
                 tracklist.innerHTML = `
                     <span>${track.title}</span> <span>|</span>
-                    <span>${Math.floor((track.duration)/60)}:${track.duration%60}</span> <span>|</span>
+                     <span>${Math.floor((track.duration)/60)}:${track.duration%60}</span> 
                     <span>${track.album.title}</span> <span>|</span>
                     <audio id="audio" src=${track.preview} controls></audio>
-                    <button class="fav">To Favorite</button>
+                    <button class="fav">Its a Vibe!</button>
                 `
                 searchResult.append(tracklist)
             })

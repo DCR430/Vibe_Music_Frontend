@@ -9,7 +9,7 @@
 body{
 	height: 1000px;
 	background:linear-gradient(to top,white 0%, rgb(246, 139, 68 )100%);
-	bottom:100%;
+	bottom:1000%;
 }
 h3{
 	position: auto;
@@ -58,7 +58,9 @@ button{
 	bottom: 0px;
 	padding: 20px;
 	overflow: auto;
-	margin-top: 150px;
+    margin-top: 150px;
+    margin-bottom: -190px;
+   
 }
 .mainview > div {
 	border-style: 100px;
@@ -81,13 +83,13 @@ button{
 	position: absolute;
 	margin-left: 15%; 
 	padding:15px; 
-	top: 5px;
+	top: 375px;
 	left: -90px;
-	border-radius: 0px; 
-	width: 220px;
-	left:725px;
+	border-radius: 10px; 
+	width: 550px;
+	left:125px;
 	background-color: black;
-	color:white;
+	color:rgb(246, 139, 68 );
 }
 .mainview * {
 	color:black;
@@ -114,7 +116,7 @@ img.search-pics {
 	position: relative;
 	left: 350px;
 	bottom: 90px;
-	font-size: small;
+	font-size: medium;
 	}
 span{
 	font-size: 14px;

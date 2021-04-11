@@ -8,7 +8,7 @@
 }
 body{
 	height: 1000px;
-	background:linear-gradient(to top,white 0%, rgb(246, 139, 68 )100%);
+	background:black;
 	bottom:1000%;
 }
 h3{
@@ -88,7 +88,7 @@ button{
 	border-radius: 10px; 
 	width: 550px;
 	left:125px;
-	background-color: black;
+	background-color: rgb(246, 139, 68 );
 	color:rgb(246, 139, 68 );
 }
 .mainview * {

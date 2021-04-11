@@ -89,7 +89,7 @@ button{
 	width: 550px;
 	left:125px;
 	background-color: rgb(246, 139, 68 );
-	color:rgb(246, 139, 68 );
+	color:black;
 }
 .mainview * {
 	color:black;

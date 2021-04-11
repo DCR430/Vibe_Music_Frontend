@@ -1,125 +1,124 @@
 #app-header img {
-	display: block;
-	position: absolute; /**/
-	margin-right: auto;
-	width:200px;
-	top: 0px;
-	left: 30px;
+  display: block;
+  position: absolute; /**/
+  margin-right: auto;
+  width: 200px;
+  top: 0px;
+  left: 30px;
 }
-body{
-	height: 1000px;
-	background:black;
-	bottom:1000%;
+body {
+  height: 1000px;
+  background: black;
+  bottom: 1000%;
 }
-h3{
-	position: auto;
-	font-family: Tahoma,Verdana,Segoe,sans-serif; 
-	justify-content: space-evenly;
-	text-align: center;
+h3 {
+  position: auto;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  justify-content: space-evenly;
+  text-align: center;
 }
-img{
-	border-style: solid;
-	border-radius: 360px;
-	border-color:white;
-	width: 200px;
+img {
+  border-style: solid;
+  border-radius: 360px;
+  border-color: white;
+  width: 200px;
 }
-button{
-	background-color:rgb(246, 139, 68);
-	color: white;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	border-radius: 12px;
+button {
+  background-color: rgb(246, 139, 68);
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
 }
 .menuview {
-	overflow: hidden;
-	position: absolute;
-	left: 0px;
-	top: 130px;
-	width: 220px;
-	background:linear-gradient(to top,rgb(68, 130, 246)white 0%,100%);
-	bottom: 0px;
-	margin-right: 25px;
-	margin-left: 25px;
-	border-radius: 25px;
-	border-style: solid;
-	border-color: white;
-	margin-top: 80px;
-	height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 130px;
+  width: 220px;
+  background: linear-gradient(to top, rgb(68, 130, 246) white 0%, 100%);
+  bottom: 0px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 80px;
+  height: 100%;
 }
 .mainview {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	justify-content: space-evenly;
-	grid-gap: 25px;
-	font-family: Tahoma,Verdana,Segoe,sans-serif; 
-	position: absolute;
-	left: 250px;
-	top: 300px;
-	right: 0px;
-	bottom: 0px;
-	padding: 20px;
-	overflow: auto;
-    margin-top: 150px;
-    margin-bottom: -190px;
-   
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  grid-gap: 25px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  position: absolute;
+  left: 250px;
+  top: 300px;
+  right: 0px;
+  bottom: 0px;
+  padding: 20px;
+  overflow: auto;
+  margin-top: 150px;
+  margin-bottom: -190px;
 }
 .mainview > div {
-	border-style: 100px;
-	border-radius:25px ;
-	text-align: center;
-	font-size: 15px;
-	color: white;
-	justify-content: space-evenly;
+  border-style: 100px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  justify-content: space-evenly;
 }
 .nav-bar {
-	position: absolute;
-	left: 220px;
-	top: 0px;
-	right: 0px;
-	height: 100.66px;
-	background:linear-gradient(to top, rgb(246, 139, 68 )white 0%,100%);
+  position: absolute;
+  left: 220px;
+  top: 0px;
+  right: 0px;
+  height: 100.66px;
+  background: linear-gradient(to top, rgb(246, 139, 68) white 0%, 100%);
 }
-#searchbar{ 
-	/* position: relative; */
-	position: absolute;
-	margin-left: 15%; 
-	padding:15px; 
-	top: 375px;
-	left: -90px;
-	border-radius: 10px; 
-	width: 550px;
-	left:125px;
-	background-color: rgb(246, 139, 68 );
-	color:black;
+#searchbar {
+  /* position: relative; */
+  position: absolute;
+  margin-left: 15%;
+  padding: 15px;
+  top: 375px;
+  left: -90px;
+  border-radius: 10px;
+  width: 550px;
+  left: 125px;
+  background-color: rgb(246, 139, 68);
+  color: black;
 }
 .mainview * {
-	color:black;
+  color: black;
 }
 audio {
-	width: 200px;
-	height: 24px;
+  width: 200px;
+  height: 24px;
 }
 #search-results {
-	position: absolute; 
-	width: 600px;
-	height: 200px;
-	right: 400px;
-	top: 50px;
-	left: 50px;
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  right: 400px;
+  top: 50px;
+  left: 50px;
 }
 img.search-pics {
-	border-style: solid;
-	border-radius: 360px;
-	border-color:white;
-	width: 200px;
+  border-style: solid;
+  border-radius: 360px;
+  border-color: white;
+  width: 200px;
 }
 #search-results div {
-	position: relative;
-	left: 350px;
-	bottom: 90px;
-	font-size: medium;
-	}
-span{
-	font-size: 14px;
-	font-family: Tahoma,Verdana,Segoe,sans-serif; 
-	color: black;
+  position: relative;
+  left: 350px;
+  bottom: 90px;
+  font-size: medium;
+}
+span {
+  font-size: 14px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color:white;
 }
